@@ -29,9 +29,9 @@ class HelpAskController extends Controller
         $helpask->email = $request->input('tel');
         $helpask->ask = $request->input('ask');
         if($helpask->save()){
-        	return response()->json("ok");
+        	return response()->json("ok")->header('Access-Control-Allow-Origin','*');
         }else{
-        	
+        	return response()->json("error")->header('Access-Control-Allow-Origin','*');
         }
         
         
