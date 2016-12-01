@@ -22,17 +22,9 @@ class HelpAskController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Request $request)
+    public function create()
     {
-        $helpask = new HelpAsk();
-        $helpask->name = $request->input('name');
-        $helpask->email = $request->input('tel');
-        $helpask->ask = $request->input('ask');
-        if($helpask->save()){
-        	return response()->json("ok")->header('Access-Control-Allow-Origin','*');
-        }else{
-        	return response()->json("error")->header('Access-Control-Allow-Origin','*');
-        }
+        
         
         
     }
@@ -45,7 +37,15 @@ class HelpAskController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    	$helpask = new HelpAsk();
+    	$helpask->name = $request->input('name');
+    	$helpask->email = $request->input('tel');
+    	$helpask->ask = $request->input('ask');
+    	if($helpask->save()){
+    		return response()->json("ok")->header('Access-Control-Allow-Origin','*');
+    	}else{
+    		return response()->json("error")->header('Access-Control-Allow-Origin','*');
+    	}
     }
 
     /**
