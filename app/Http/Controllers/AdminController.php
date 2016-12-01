@@ -54,9 +54,13 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id) //get /admin/{id}/edit 
     {
-        //
+        $helpask = HelpAsk::find($id);
+        $users =  User::all();
+        
+        return view('admin.edit',['helpask'=> $helpask, 'users'=>$users]);
+        
     }
 
     /**
@@ -66,9 +70,12 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id)//admin/1 PUT
     {
-        //
+    	$helpask = HelpAsk::find($id);
+    	$user = User::find($request->input('user_id'));
+    	$helpask->user()->save($user);
+    	return redirect('admin.index');
     }
 
     /**
