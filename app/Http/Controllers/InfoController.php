@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\HelpAsk;
+use App\User;	
 
-class HelpAskController extends Controller
+class InfoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class HelpAskController extends Controller
      */
     public function index()
     {
-        //
+        $user = User::find(1);
+        return response()->json($user);
     }
 
     /**
@@ -24,9 +25,7 @@ class HelpAskController extends Controller
      */
     public function create()
     {
-        
-        
-        
+        //
     }
 
     /**
@@ -37,17 +36,7 @@ class HelpAskController extends Controller
      */
     public function store(Request $request)
     {
-    	$helpask = new HelpAsk();
-    	$helpask->name = $request->input('name');
-    	$helpask->email = $request->input('email');
-    	$helpask->ask = $request->input('ask');
-    	$helpask->tel = $request->input('tel');
-// 		debug($helpask->name);
-    	if($helpask->save()){
-    		return response()->json("ok",200)->header('Access-Control-Allow-Origin','*');
-    	}else{
-    		return response()->json("error", 500)->header('Access-Control-Allow-Origin','*');
-    	}
+        //
     }
 
     /**

@@ -14,6 +14,6 @@
 
 Auth::routes();
 
-Route::resource("/api/helpaks", "HelpAskController");
+Route::resource("/api/helpask", "HelpAskController");
+Route::resource("/api/info", "InfoController");
 Route::resource('/admin', 'AdminController');
-// Route::get('/admin/edit', 'EditController@edit');
