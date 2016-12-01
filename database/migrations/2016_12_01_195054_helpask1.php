@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Helpask extends Migration
+class Helpask1 extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,9 @@ class Helpask extends Migration
      */
     public function up()
     {
-    	Schema::create('helpask', function (Blueprint $table) {
-    		$table->increments('id');
-    		$table->string('name');
-    		$table->string('email');
-    		$table->string('tel');
-    		$table->string('ask');
+    	Schema::table('help_asks', function (Blueprint $table) {
     		$table->integer('user_id');
-    		$table->timestamps();
+    		
     	});
     }
 
@@ -31,6 +26,6 @@ class Helpask extends Migration
      */
     public function down()
     {
-    	Schema::drop('helpask');
+        //
     }
 }

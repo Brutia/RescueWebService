@@ -165,7 +165,7 @@ return [
     	GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
     		Barryvdh\Debugbar\ServiceProvider::class,
 //     		Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
-    		Laravel\Passport\PassportServiceProvider::class,
+//     		Laravel\Passport\PassportServiceProvider::class,
     		
 
         /*
