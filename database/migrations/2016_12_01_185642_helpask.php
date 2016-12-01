@@ -13,7 +13,7 @@ class Helpask extends Migration
      */
     public function up()
     {
-    	Schema::create('helpask', function (Blueprint $table) {
+    	Schema::create('help_asks', function (Blueprint $table) {
     		$table->increments('id');
     		$table->string('name');
     		$table->string('email');
