@@ -164,6 +164,8 @@ return [
         Illuminate\View\ViewServiceProvider::class,
     	GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
     		Barryvdh\Debugbar\ServiceProvider::class,
+//     		Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+    		Laravel\Passport\PassportServiceProvider::class,
     		
 
         /*
@@ -229,6 +231,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
     		'Debugbar' => Barryvdh\Debugbar\Facade::class,
+//     		'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
 
     ],
 
