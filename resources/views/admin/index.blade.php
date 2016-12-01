@@ -27,9 +27,9 @@
 								<tr>
 									<td>{{ $helpask->id }}</td>
 									<td>{{ $helpask->name }}</td>
-									<td>{{ $helpask->ask }}</td>
+									<td><strong>{{ $helpask->ask }}</strong></td>
 									<td class="td-actions">
-									<a href="javascript:;" class="btn btn-small btn-primary">Affecter &agrave
+									<a href="{{ URL::url('edit',"user_id" => $helpask->user_id) }}" class="btn btn-small btn-primary">Affecter &agrave
 										<i class="btn-icon-only icon-ok"></i>										
 									</a>
 									
