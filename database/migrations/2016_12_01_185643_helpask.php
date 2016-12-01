@@ -15,11 +15,11 @@ class Helpask extends Migration
     {
     	Schema::create('help_asks', function (Blueprint $table) {
     		$table->increments('id');
-    		$table->string('name');
-    		$table->string('email');
-    		$table->string('tel');
-    		$table->string('ask');
-    		$table->integer('user_id');
+    		$table->string('name')->nullable();
+    		$table->string('email')->nullable();
+    		$table->string('tel')->nullable();
+    		$table->string('ask')->nullable();
+    		$table->integer('user_id')->nullable();
     		$table->timestamps();
     	});
     }
