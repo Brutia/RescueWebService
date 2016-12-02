@@ -1,0 +1,589 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+/* GENERAL */
+
+body {
+	padding-top: 50px;
+	background-color: #e2e2e2;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 0px;
+	font-weight: 300;
+}
+
+/*Header*/
+.header{
+	padding-top: 20px;
+	background-color: #5c1f40;
+}
+
+
+
+/* * * * * NAVBAR * * * * */
+.navbar {
+	background-color: white;
+	border-bottom-color: black;
+	margin-bottom: 20px;
+
+
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: #030033;
+}
+.navbar-fixed-top {
+	padding: 10px 0px 10px 0px;
+}
+
+
+
+.navbar-brand > img {
+	max-height: 50px;
+}
+
+
+/* * * * * PAGE ACCUEIL * * * * */
+
+/* CAROUSEL */
+/*.carousel {
+	max-height: 600px;
+}
+
+.carousel-inner {
+	max-height: 600px;
+	object-fit: cover;
+}
+
+.carousel-inner .item img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	vertical-align: middle;
+	display: block;
+}
+
+#image1 {
+	height: 600px;
+	background-image: url(/img/logo.png);
+	background-position: center center;
+	background-size: cover;
+}
+
+#image2 {
+	height: 600px;
+	background-image: url(/img/logo.png);
+	background-position: center center;
+	background-size: cover;
+}
+
+#image3 {
+	height: 600px;
+	background-image: url(/img/carousel/Campus_Georges_Charpak_Provence.jpeg);
+	background-position: center center;
+	background-size: cover;
+}*/
+
+
+/* MARKETING */
+.marketing {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.marketing h1 {
+	display: inline-block;
+	text-align: center;
+	float: none;
+	border-bottom: 3px solid black;
+}
+
+.marketing p {
+	font-weight: 400;
+	text-align: justify;
+}
+
+.valign {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+.logo-cnje {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+	max-width: 410px;
+}
+
+
+/* COMPETENCES */
+.competences {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.competences h2 {
+	display: inline-block;
+	text-align: center;
+	border-bottom: 3px solid black	;
+	margin-bottom: 30px;
+}
+
+.competences p{
+}
+
+.competences .btn{
+    margin-top : 5px;
+}
+
+
+/* RUBAN */
+.ruban {
+	background-color: #02497d; /* ou #022843 */
+}
+
+
+/* KEYNUMBER */
+.keynumber {
+	background-color: #5c1f40;
+	text-align: center;
+	padding: 3em;
+}
+
+.keynumber p {
+	font-size: 2.4em;
+	color: white;
+	letter-spacing: 0.1em;
+	padding-top: 0.5em;
+	font-family: 'Open Sans', 'Calibri', sans-serif;
+}
+
+
+/* CLIENTS */
+.clients {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.clients h2 {
+	display: inline-block;
+	text-align: center;
+	border-bottom: 3px solid black;
+	margin-bottom: 30px;
+}
+
+.case-client {
+	margin: 10px 0 10px 0;
+	padding: 0 10px 0 10px;
+	height: 140px;
+	display: inline-block;
+}
+
+.clients img {
+	max-height: 140px;
+	transition: 0.3s;
+}
+
+.logo-client {
+	display: inline-block;
+}
+
+.logo-client:hover {
+	opacity: 0.3;
+}
+
+
+/* TEMOIGNAGE */
+.recommendation {
+	text-align: center;
+	padding: 3em;
+}
+
+.recommendation p {
+	font-size: 1.4em;
+	color: white;
+	padding-top: 0.5em;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+
+
+/* PARTNER */
+.partner {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.partner h2{
+	display: inline-block;
+	text-align: center;
+	border-bottom: 3px solid #72254f;
+	margin-bottom: 30px;
+}
+
+.case-partner {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0 10px 0 10px;
+	height: 120px;
+	display: inline-block;
+}
+
+.logo-partner {
+	max-height: 120px;
+	transition: 0.3s;
+}
+
+.logo-partner:hover {
+	opacity: 0.3;
+}
+
+
+
+
+/* * * * * FOOTER * * * * */
+footer {
+	background-color: #451830;
+	color: white;
+	height: 4em;
+	padding : 22px 0 20px;
+	font-size: 1em;
+}
+
+.return-top{
+	color: white;
+	margin: 0 1em 0 1em;
+}
+
+.return-top:hover{
+	color: black;
+}
+
+/* INFOS */
+/*
+.infos {
+	background-color: #022843;
+	text-align: justify;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.3em;
+}
+
+.infos img {
+	margin-top: 3em;
+	height: 120px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.infos i {
+	font-size: 1.8em;
+}
+
+/* SOCIAL */
+/*
+.social {
+	padding-top: 3em;
+	text-align: center;
+}
+
+.social p {
+	font-size: 1em;
+	color: #FFFFFF;
+}
+
+.social a {
+	color: white;
+	margin: 0 1em 0 1em;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* * * * * PAGE EQUIPE * * * * */
+.equipe .title{
+/*	font-height: 300; */
+	background-color: #02497d;
+	margin-bottom: 30px;
+	padding: 15px 10px 10px 10px;
+}
+
+.equipe .title h1 {
+	font-size: 2em;
+	font-weight: 300;
+	color: white;
+}
+
+.equipe .membre{
+	text-align: center;
+	font-size: 2em;
+}
+
+.equipe .membre img {
+	max-height: 280px;
+}
+
+.membre h2{
+	font-size : 0.8em;
+}
+
+.membre p{
+	font-size : 0.7em;
+}
+
+
+
+
+
+/* * * * * PAGE COMPETENCES * * * * */
+.comp .title{
+	background-color: #02497d;
+	padding: 15px 10px 10px 10px;
+}
+
+.comp .title .glyphicon {
+	font-size: 1.6em;
+	font-weight: 300;
+	color: white;
+}
+
+.comp h1 {
+	font-size: 2em;
+	font-weight: 300;
+	color: white;
+	display: inline-block;
+}
+
+.comp .content {
+	padding-top: 2em;
+	padding-bottom: 3em;
+	background-color: white;
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+/* * * * * PAGE CONTACT * * * * */
+
+/* ADDRESSE */
+.contact .title{
+	background-color: #02497d;
+	margin-bottom: 2em;
+	padding: 15px 10px 10px 10px;
+}
+
+.contact .title h1 {
+	font-size: 2em;
+	font-weight: 300;
+	color: white;
+}
+
+.contact .panel {
+	background-color: #F5F5F5;
+}
+
+.contact h2 {
+	font-size: 1.2em;
+	font-weight: 300;
+	margin-top: 1em;
+	margin-bottom: 0px;
+}
+
+.contact legend {
+	margin-bottom: 0;
+}
+
+.contact address {
+	margin-top: 20px;
+}
+
+.contact address ul {
+	padding: 0;
+}
+
+.contact address li {
+	list-style-type: none;
+	margin-bottom: 5px;
+	font-size: 1em;
+}
+
+/* FORMULAIRE DEVIS */
+.control-label {
+	padding-left: 0;
+}
+
+.form-fixed-margin {	/*useless*/
+	margin: 20px 0 0 0; !important
+}
+
+.form-group .radio-inline input {
+	margin-top: 0;
+}
+
+.form-group .btn {
+	margin-top: 3em;
+}
+
+/* CARTE */
+.carte {
+	position: relative;
+	padding-bottom: 30%; /* 4:3 ratio*/
+	height: 0;
+	overflow: hidden;
+}
+
+.carte iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	pointer-events: none;
+}
+
+
+
+
+
+/* * * * * PAGE NEWSLETTERS * * * * */
+.newsletter .title{
+	background-color: #02497d;
+	margin-bottom: 2em;
+	padding: 15px 10px 10px 10px;
+}
+
+.newsletter h1 {
+	font-size: 2em;
+	font-weight: 300;
+	color: white;
+}
+
+.newsletter h2 {
+	font-size: 1.4em;
+	font-weight: 400;
+	color:#ff6600;
+}
+
+.newsletter p {
+	font-size: 1.2em;
+}
+
+.newsletter .panel-body {
+	padding: 0;
+}
+
+.newsletter-article {
+	margin: 0 0 4em 0;
+}
+
+.newsletter-title {
+	font-size: 1.8em;
+	font-weight: 600;
+	color: #FF6600;
+	text-align: center;
+}
+
+.newsletter-subtitle {
+	margin: 1em 0 1em 0;
+	font-size: 30px;
+	text-align: center;
+}
+
+.newsletter-txt {
+	font-family: Helvetica;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.newsletter-img {
+	margin-bottom: 1em;
+}
+
+.btn {
+	white-space: normal;
+}
+
+.newsletter-btn {
+	background-color: #005A9C;
+	color: #FFFFFF;
+}
+
+.newsletter-btn:hover {
+	color: #FFFFFF;
+	opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+/* * * * * PAGE ERREUR 404 * * * * */
+.erreur {
+	text-align: center;
+	padding: 50px 0px 50px 0px;
+}
+
+.erreur i{
+	font-size: 10em;
+	margin: 30px 0px 30px 0px;
+}
+
+.erreur p{
+	font-size: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Collapse the navbar on scroll */
+
+@media (min-width: 768px) {
+	.navbar {
+
+	}
+
+	.navbar-fixed-top {
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+
+	.navbar-shrink {
+		padding : 0px 0px 0px 0px;
+		margin : 0;
+		min-height: 50px;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+	}
+
+/*	.body-down {
+		padding-top: 80px;
+	}*/
+}
