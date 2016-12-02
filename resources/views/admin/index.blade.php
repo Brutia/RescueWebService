@@ -3,7 +3,7 @@
 
 @section('content')
 
-<script href="{{ URL::asset('css/index.css') }}"></script>
+<link href="{{ URL::asset('css/index.css') }}" rel="stylesheet">
 
 
 <div class="span7">   
