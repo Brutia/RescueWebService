@@ -9,7 +9,9 @@
         "laravel/framework": "5.3.*",
         "graham-campbell/exceptions": "^9.1",
         "barryvdh/laravel-debugbar": "^2.3",
-        "sammyk/laravel-facebook-sdk": "^3.0"
+		"facebook/graph-sdk" : "5.x",
+		"sammyk/laravel-facebook-sdk": "^3.0"
+		
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
