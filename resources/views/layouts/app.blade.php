@@ -77,6 +77,7 @@
                                 </ul>
                             </li>
                         @endif
+                        @yield('title')
                     </ul>
                 </div>
             </div>

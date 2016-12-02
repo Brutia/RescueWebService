@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\HelpAsk;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 class AdminController extends Controller
 {
     /**
@@ -14,7 +15,9 @@ class AdminController extends Controller
      */
     public function index()
     {
-    	return view('admin.index', ['helpasks' => HelpAsk::all(),'users' => User::all()]);
+    	$curUser = Auth::user();
+    	$nombreTaches=HelpAsk::where(['user_id'=>$curUser->id])->count();
+    	return view('admin.index', ['helpasks' => HelpAsk::all(),'users' => User::all(),'nombreTaches' => $nombreTaches]);
     }
 
     /**
