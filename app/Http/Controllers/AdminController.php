@@ -14,7 +14,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-    	return view('admin.index', ['helpasks' => HelpAsk::all()]);
+    	return view('admin.index', ['helpasks' => HelpAsk::all(),'users' => User::all()]);
     }
 
     /**

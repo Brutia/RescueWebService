@@ -14,13 +14,13 @@
 			type="email" disabled class="span3" value={{$helpask->email}}><br />
 		<br /> <label>Telephone :</label><input type="text" disabled
 			class="span3" value={{$helpask->tel}}><br /> <br /> <label>Demande</label><input
-			type="password" disabled class="span3" value={{$helpask->ask}}><br />
+			 type="text" disabled class="span3" value='{{$helpask->ask}}'><br />
 		<br />
 
 		<fieldset>
 			<br /> <br />
 			<div class="form-group">
-				<label>Select Basic</label>
+				<label>Selectionner le responsable de la t&acircche</label>
 				<div class="col-md-4">
 					<select id="selectbasic" name="user_id" class="form-control">
 						@foreach($users as $user)

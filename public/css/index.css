@@ -108,3 +108,8 @@ thead {
 
 .deroul div{ display:none; }
 .deroul:hover div{ display:block }
+
+.button2
+{
+	color: #111;
+}
