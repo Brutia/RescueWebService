@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\HelpAsk;
+use App\User;
 class AdminController extends Controller
 {
     /**
@@ -13,7 +14,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-    	return view('admin.index', ['helpasks' => HelpAsk::all()]);
+    	return view('admin.index', ['helpasks' => HelpAsk::all(),'users' => User::all()]);
     }
 
     /**
@@ -74,8 +75,9 @@ class AdminController extends Controller
     {
     	$helpask = HelpAsk::find($id);
     	$user = User::find($request->input('user_id'));
-    	$helpask->user()->save($user);
-    	return redirect('admin.index');
+    	$helpask->user()->associate($user)->save();
+//    		$user->helpAsks()->associate($helpask);
+    	return redirect()->route('admin.index');
     }
 
     /**
