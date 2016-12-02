@@ -42,6 +42,8 @@ class InfoController extends Controller {
 		}
 		
 		$me = $response->getGraphEdge();
+// 		$me = json_decode($me);
+// 		$me = $me[0];
 		return response($me);
 	}
 	

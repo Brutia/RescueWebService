@@ -164,7 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
     	GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
     	Barryvdh\Debugbar\ServiceProvider::class,
-    	SammyK\LaravelFacebookSdk\LaravelFacebookSdkServiceProvider::class,
+//     	SammyK\LaravelFacebookSdk\LaravelFacebookSdkServiceProvider::class,
     		
 
         /*
