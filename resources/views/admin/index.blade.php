@@ -1,4 +1,12 @@
- @extends('layouts.app') @section('content')
+ 
+ @extends('layouts.app') 
+ 
+ @section('title')
+ <br/><br/><br/>{{"Nombre de t"}}&acirc{{"ches en cours :"}}<strong>{{$nombreTaches}}</strong>
+ @endsection
+ 
+ 
+ @section('content')
 
 <link href="{{ URL::asset('css/index.css') }}" rel="stylesheet">
 
