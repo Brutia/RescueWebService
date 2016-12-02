@@ -164,6 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
     	GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
     		Barryvdh\Debugbar\ServiceProvider::class,
+    		SammyK\LaravelFacebookSdk\LaravelFacebookSdkServiceProvider::class,
 //     		Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
 //     		Laravel\Passport\PassportServiceProvider::class,
     		
