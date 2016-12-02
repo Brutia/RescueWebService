@@ -17,3 +17,11 @@ Auth::routes();
 Route::resource("/api/helpask", "HelpAskController");
 Route::resource("/api/info", "InfoController");
 Route::resource('/admin', 'AdminController');
+
+Route::get('/home', function( ){
+	return view('web.home');
+});
+
+Route::get('/application', function( ){
+		return view('web.application');
+});
