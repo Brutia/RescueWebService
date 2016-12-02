@@ -4,9 +4,11 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Minecrosoft-Accueil</title>
 	<!-- Latest compiled and minified CSS -->
+	
+	<script type="text/javascript" href="{{ URL::asset('js/jquery-3.1.1.min.js') }}"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-	<link rel="stylesheet" href="css/Style.css"
+  <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/Style.css">
 </head>
 
 <body>
@@ -27,10 +29,10 @@
             </div>
             <div id="navbar-text" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-left">
-                <li ><a href="Index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Accueil</a></li>
+                <li ><a href="{{url('/home')}}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Accueil</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-left">
-                <li class="active"><a href="application.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Application</a></li>
+                <li class="active"><a href="{{url('/application')}}"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Application</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-left">
                 <li><a href="#" download><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Téléchargement</a></li>
@@ -41,10 +43,6 @@
       </div>
     </div>
   </div>
-<script type="text/javascript">
-var H = $(".navbar").height();
-$("body").css('padding-top', H);
-</script>
 
 
 <div class="container-fluid marketing">
