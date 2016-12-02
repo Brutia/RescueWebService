@@ -29,7 +29,7 @@
 									<td>{{ $helpask->name }}</td>
 									<td><strong>{{ $helpask->ask }}</strong></td>
 									<td class="td-actions">
-									<a href="{{ URL::url('admin.edit',[$helpask->id] )}}" class="btn btn-small btn-primary">Affecter &agrave
+									<a href="{{ route('admin.edit',[$helpask->id] )}}" class="btn btn-small btn-primary">Affecter &agrave
 										<i class="btn-icon-only icon-ok"></i>										
 									</a>
 									
