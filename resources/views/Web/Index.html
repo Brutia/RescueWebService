@@ -5,47 +5,52 @@
 	<title>Minecrosoft-Accueil</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	<link rel="stylesheet" href="css/Style.css"
 </head>
 
 <body>
 	<div class="container-fluid">
 		<div class="row header">
-			<div class="col-md-4 pull-right">
-				<nav class="navbar navbar-default">
+			<div class="col-md-5 col-xs-6 pull-right">
+				<nav id="navbar" class="navbar navbar-default" role="navigation">
 					<div class="container-fluid">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-text" aria-expanded="false" aria-controls="navbar">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand" href="#">RescueApp</a>
+							<a class="navbar-brand" href="Index.html">RescueApp</a>
 						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="Index.html">Accueil <span class="sr-only">(current)</span></a></li>
-								<li><a href="application.html">Application</a></li>
-								<li><a href="#">Téléchargement</a></li>
+						<div id="navbar-text" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-left">
+								<li class="active"><a href="Index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Accueil</a></li>
 							</ul>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
+							<ul class="nav navbar-nav navbar-left">
+								<li ><a href="application.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Application</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="#" download><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Téléchargement</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		</div>
 	</div>
 </div>
-</div>
+<script type="text/javascript">
+var H = $(".navbar").height();
+$("body").css('padding-top', H);
+</script>
 
 <div class="container-fluid marketing">
 	<div class="row">
 
 		<div class="col-md-offset-2 col-md-1 ">
-			<a href="http://junior-entreprises.com/">
+			<a>
 				<img class="img-responsive wow bounceIn center-block" src="./img/logo.png" alt="CNJE">
 			</a>
 		</div>

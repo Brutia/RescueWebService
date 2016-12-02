@@ -5,52 +5,58 @@
 	<title>Minecrosoft-Accueil</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	<link rel="stylesheet" href="css/Style.css"
 </head>
 
 <body>
 	<div class="container-fluid">
 		<div class="row header">
-			<div class="col-md-4 pull-right">
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="#">RescueApp</a>
-						</div>
+			<div class="col-md-5 col-xs-6 pull-right">
+        <nav id="navbar" class="navbar navbar-default" role="navigatione">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="Index.html">RescueApp</a>
+            </div>
+            <div id="navbar-text" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-left">
+                <li ><a href="Index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Accueil</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-left">
+                <li class="active"><a href="application.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Application</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#" download><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Téléchargement</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+var H = $(".navbar").height();
+$("body").css('padding-top', H);
+</script>
 
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li><a href="Index.html">Accueil <span class="sr-only">(current)</span></a></li>
-								<li class="active"><a href="application.html">Application</a></li>
-								<li><a href="#">Téléchargement</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-	</div>
-</div>
-</div>
 
 <div class="container-fluid marketing">
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4 ">
-			<h1>Rescue App</h1>
-			<p><strong>Rescue App</strong> est une application d'aide aux réfugiés. Cette application informatique permet de fédérer des outils d'informations et d'interactions afin de répondre à différentes problématiques pour leur  venir en aide.</p>
+			<h1>Refuginfo App</h1>
+			<p><strong>Refuginfo App</strong> est une application d'aide aux réfugiés. Cette application informatique permet de fédérer des outils d'informations et d'interactions afin de répondre à différentes problématiques pour leur  venir en aide.</p>
 		</div>
 
 
 		<div class="col-md-3 logo-cnje">
-			<a href="http://junior-entreprises.com/">
+			<a >
 				<img class="img-responsive wow bounceIn center-block" src="./img/logo_app.png" alt="CNJE">
 			</a>
 		</div>
